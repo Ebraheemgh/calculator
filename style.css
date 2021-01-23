@@ -1,0 +1,72 @@
+    body {
+        background-color: lightblue;
+    }
+    
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: xx-large;
+    }
+    
+    th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: xx-large;
+    }
+    
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: xx-large;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    th {
+        height: 100px;
+        background-color: rgb(41, 37, 37);
+        text-align: left;
+        padding-left: 10px;
+        color: blanchedalmond;
+    }
+    
+    table {
+        margin: auto;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+        table {
+            width: 100%;
+        }
+        td {
+            height: 15vh;
+        }
+    }
+    
+    @media only screen and (max-width: 300px) {
+        table {
+            width: 100%;
+        }
+        td {
+            height: 10vh;
+        }
+    }
+    
+    table tr:nth-child(2) td {
+        background-color: rgb(223, 208, 208);
+    }
+    
+    table tr:nth-child(3) td:nth-child(4) {
+        background-color: orangered;
+    }
+    
+    table tr:nth-child(2)~tr td {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    table tr:nth-child(2) td:hover,
+    table tr:nth-child(2)~tr td:hover {
+        background-color: rgba(255, 255, 255, 0.315);
+    }
